@@ -123,5 +123,11 @@
         "ApplicationId": "[variables('functionAppName')]"
       }
     }
-  ]
+  ],
+  "outputs": {
+    "functionAppName": {
+      "value": "[variables('functionAppName')]",
+      "type": "string"
+    }
+  }
 }
