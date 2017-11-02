@@ -15,7 +15,7 @@
     "hostingPlanName": "[concat(parameters('appName'),'-plan-', uniqueString(resourceGroup().id))]",
     "functionAppStorageName": "[tolower(concat(parameters('appName'),'func', uniqueString(resourceGroup().id)))]",
     "appInsightsName": "[concat(parameters('appName'),'-func-AI-', uniqueString(resourceGroup().id))]",
-    "queueStorageName": "[tolower(concat(parameters('appName'),'que-', uniqueString(resourceGroup().id)))]"
+    "queueStorageName": "[tolower(concat(parameters('appName'),'que', uniqueString(resourceGroup().id)))]"
   },
   "resources": [
     {
