@@ -6,6 +6,7 @@ namespace AzureFunctionsScaleDemo
 {
     public static class QueueTriggers
     {
+        
         [FunctionName("QueueTrigger1")]
         public static async Task QueueTrigger1(
             [QueueTrigger("queue1", Connection = "queueConnection")]string myQueueItem,
