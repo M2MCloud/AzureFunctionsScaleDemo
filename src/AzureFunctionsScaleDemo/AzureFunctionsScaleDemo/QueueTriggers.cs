@@ -13,7 +13,7 @@ namespace AzureFunctionsScaleDemo
             [Queue("queue2", Connection = "queueConnection")]IAsyncCollector<string> output,
             ILogger log)
         {
-            await output.AddAsync("New Item 1");
+            await output.AddAsync("New Item 100000");
             await output.AddAsync("New Item 2");
         }
 
